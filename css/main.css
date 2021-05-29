@@ -9,13 +9,20 @@
   margin: 0;
 }
 
+header {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
 .navbar {
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100px;
   background-color: white;
 }
 .navbar .logo {
@@ -25,7 +32,6 @@
   font-weight: 300;
   font-family: Poppins, sans-serif;
   color: var(--text-color);
-  margin-left: 130px;
 }
 .navbar .logo span {
   font-weight: 700;
@@ -46,7 +52,6 @@
   background-color: var(--light-blue);
   border-radius: 50px;
   padding: 10px 20px;
-  margin-right: 130px;
 }
 
 .hero {
@@ -61,6 +66,7 @@
 .hero .cta-division {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   height: 200px;
   width: 350px;
   grid-column-start: 1;
@@ -82,17 +88,23 @@
   color: white;
   background: var(--light-blue);
   border-radius: 50px;
+  padding: 10px 20px;
   font-family: Poppins, sans-serif;
   font-weight: bold;
-  padding: 10px 20px;
   margin-right: 50px;
 }
 .hero .cta-division .video-link {
   display: flex;
+  justify-content: right;
   align-items: center;
 }
 .hero .cta-division .video-link img {
   margin-right: 10px;
+}
+.hero .cta-division .video-link a {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
 }
 .hero .illustration {
   grid-column-start: 2;
@@ -100,4 +112,15 @@
   grid-row-start: 0;
   grid-row-end: 1;
   justify-self: start;
+}
+
+.people {
+  background-color: #19192A;
+}
+.people ul li {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 56px;
 }/*# sourceMappingURL=main.css.map */
