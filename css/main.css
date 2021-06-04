@@ -13,14 +13,16 @@ header {
   height: 100px;
   width: 100%;
   background-color: white;
+  display: flex;
+  position: fixed;
 }
 
 .navbar {
-  width: 1000px;
-  margin: 0 auto;
+  width: 1500px;
+  height: 45px;
+  margin: auto auto;
   display: flex;
   flex-flow: row nowrap;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -114,13 +116,51 @@ header {
   justify-self: start;
 }
 
-.people {
+.people-section {
   background-color: #19192A;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 50% 50%;
+  place-items: center;
+  width: 100%;
+  height: 600px;
 }
-.people ul li {
+.people-section .features-list {
+  width: 200px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.people-section .features-list ul li {
+  list-style: none;
   color: white;
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 56px;
+}
+.people-section .imageSection {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-self: end;
+  justify-self: stretch;
+  margin: 15px;
+}
+.people-section .imageSection img {
+  margin: 10px;
+  width: 200px;
+}
+.people-section .imageSection p {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.people-section .imageTop {
+  align-self: end;
+}
+.people-section .imageBottom {
+  align-self: start;
 }/*# sourceMappingURL=main.css.map */
