@@ -37,7 +37,7 @@ header {
 		font-weight: 300;
 		font-family: Poppins, sans-serif;
 		color: var(--text-color);
-	
+
 		span {
 			font-weight: 700;
 			color: var(--light-blue);
@@ -159,6 +159,15 @@ header {
 				font-weight: 300;
 				line-height: 56px;
 			}
+
+			&::before {
+				content: '';
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: red;
+			}
+
 		}
 	}
 
@@ -189,5 +198,5 @@ header {
 	.imageBottom {
 		align-self: start;
 	}
-	
+
 }

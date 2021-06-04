@@ -140,6 +140,14 @@ header {
   font-weight: 300;
   line-height: 56px;
 }
+.people-section .features-list ul::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+}
 .people-section .imageSection {
   display: flex;
   flex-flow: column nowrap;
@@ -163,4 +171,6 @@ header {
 }
 .people-section .imageBottom {
   align-self: start;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
