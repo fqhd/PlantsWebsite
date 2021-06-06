@@ -133,24 +133,28 @@ header {
   grid-column-end: 2;
 }
 
+
 .people-section .features-list ul li {
+  position: relative;
   list-style: none;
-	position: relative;
   color: white;
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 56px;
 }
-.people-section .features-list ul::before {
+
+.people-section .features-list ul li::before {
   content: "";
-	position: absolute;
   width: 20px;
   height: 20px;
   background-image: url("../images/bullet.svg");
+  position: absolute;
   background-size: contain;
-	margin-right: 0.5em;
+  top: 18px;
+  left: -38px;
 }
+
 .people-section .imageSection {
   display: flex;
   flex-flow: column nowrap;
