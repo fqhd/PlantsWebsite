@@ -132,8 +132,10 @@ header {
   grid-column-start: 1;
   grid-column-end: 2;
 }
+
 .people-section .features-list ul li {
   list-style: none;
+	position: relative;
   color: white;
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -142,11 +144,12 @@ header {
 }
 .people-section .features-list ul::before {
   content: "";
-  display: block;
+	position: absolute;
   width: 20px;
   height: 20px;
   background-image: url("../images/bullet.svg");
   background-size: contain;
+	margin-right: 0.5em;
 }
 .people-section .imageSection {
   display: flex;
